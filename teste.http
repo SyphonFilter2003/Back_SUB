@@ -1,0 +1,46 @@
+### Teste de POST - Cadastrar Aluno
+POST http://localhost:5279/api/alunos
+Content-Type: application/json
+
+{
+    "nome": "João",
+    "sobrenome": "Silva",
+    "dataNascimento": "2000-01-01",
+    "email": "joao.silva@email.com"
+}
+
+### Teste de POST - Cadastrar IMC
+POST http://localhost:5279/api/imcs
+Content-Type: application/json
+
+{
+    "alunoId": 1,
+    "peso": 70,
+    "altura": 1.75
+}
+
+### Teste de PUT - Alterar IMC
+PUT http://localhost:5279/api/imcs/1
+Content-Type: application/json
+
+{
+    "alunoId": 1,
+    "peso": 80,
+    "altura": 1.80
+}
+
+
+### Teste de DELETE - Excluir IMC
+DELETE http://localhost:5279/api/imcs/1
+Content-Type: application/json
+
+
+### Teste de GET - Listar IMCs por Aluno
+GET http://localhost:5279/api/imcs/aluno/1
+Content-Type: application/json
+
+
+### Teste de GET - Listar Alunos
+GET http://localhost:5279/api/alunos
+Content-Type: application/json
+
